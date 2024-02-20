@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+body{
+    background-color: rgba(220, 220, 220, 0.495);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo{
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px  grey;
+    width: 460px;
+    padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.add-button{
+    background-color: rgba(0, 255, 13, 0.497);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: 3px  solid #00000081;
+    margin-left: 3px;
+}
+.add-button:hover{
+    background-color: rgb(0, 255, 13);
 }
 
-.App-link {
-  color: #61dafb;
+.complete-button{
+    color: aliceblue;
+    background-color: rgba(255, 0, 0, 0.497);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.complete-button:hover{
+    background-color: rgb(255, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.move-button{
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 255, 251, 0.497);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.move-button:hover{
+    background-color: rgb(0, 255, 251);
+}
+
+input[type="text"]{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 3px  solid #00000081;
+}
+
+ol{
+    padding: 0;
+}
+li{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(180, 180, 180, 0.285);
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.39);
+    display: flex;
+    align-items: center;
+}
+.text{
+    flex: 1;
+    overflow: hidden;
 }
